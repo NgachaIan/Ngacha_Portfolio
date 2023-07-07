@@ -1,0 +1,125 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.content {
+  flex: 1;
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.about {
+  padding: 40px;
+  margin-bottom: 20px;
+}
+
+.about h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.program-card {
+  display: none;
+}
+
+.speaker-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.speaker-image {
+  flex: 0 0 150px;
+  margin-right: 20px;
+  height: 100px;
+  width: 100px;
+}
+
+.speaker-info {
+  flex: 1;
+}
+
+.hidden-speaker {
+  display: none;
+}
+
+#seeMoreButton {
+  display: none;
+}
+
+.partners-container {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.partner-logo {
+  height: 80px;
+  width: auto;
+  margin-left: 20px;
+  transition: transform 1s;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .speaker-card {
+    flex-direction: row;
+  }
+
+  .speaker-image {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hidden-speaker {
+    display: none;
+  }
+
+  #seeMoreButton {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .about {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+}
