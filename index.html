@@ -8,18 +8,31 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Cocogoose" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>API Festival Nairobi 2023</title>
 </head>
 
 <body>
-    <header class="header">
-        <h1>Welcome to the API Festival</h1>
-        <p>Discover, learn, and celebrate the power of APIs</p>
+    <header>
+        <div class="header">
+            <div class="header-item">
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+            <div class="header-item">
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="header-item">English</div>
+            <div class="header-item">Mypage</div>
+            <div class="header-item">Logout</div>
+        </div>
+
+
 
     </header>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Offcanvas navbar large">
+    <nav class="navbar navbar-expand-lg navbar-white bg-white" aria-label="Offcanvas navbar large">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">API Festival Nairobi 2023</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
@@ -49,97 +62,104 @@
                         <li class="nav-item">
                             <a class="nav-link" href="">Sponsor</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-outline-danger">CC Campaign</button>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </nav>
-
-    <section id="about" class="about">
-        <h2>The API Festival</h2>
-        <p>Welcome to the API Festival, the premier event for developers, entrepreneurs, and tech enthusiasts to explore
-            the world of APIs. Join us for a day filled with insightful talks, hands-on workshops, and networking
-            opportunities.</p>
-        <p>At the API Festival, you'll have the chance to learn about the latest API trends, best practices, and
-            cutting-edge technologies. Engage with industry experts, discover innovative use cases, and connect with
-            like-minded individuals from around the globe.</p>
-    </section>
-
-    <section id="program" class="about">
-        <h2>Event Schedule</h2>
-        <p>Stay tuned for the detailed schedule of the API Festival. We'll be updating this section soon with all the
-            exciting sessions and activities planned for the event.</p>
-        <div class="container mt-4">
-            <div class="row">
-                <div class="col-md-4 mt-4">
-                    <div class="card">
-                        <i class="fas fa-chalkboard-teacher fa-4x"></i>
-                        <h3>Introduction</h3>
-                        <h6>8:00 a.m - 10:00 a.m</h6>
-                    </div>
+    <section>
+        <div class="begin">
+            <div class="introduction">
+                <div class="intro-heading">
+                    <p>"The API Festival!"</p>
+                    <h1 class="intro-trans-anim">Welcome to the API Festival, the premier event for developers, entrepreneurs, and tech enthusiasts to explore
+                        the world of APIs. Join us for a day filled with insightful talks, hands-on workshops, and networking
+                        opportunities. <br>2023</h1>
                 </div>
-                <div class="col-md-4 mt-4">
-                    <div class="card">
-                        <i class="fas fa-museum fa-4x"></i>
-                        <h3>Presentation</h3>
-                        <h6>10:00 a.m - 12:00 p.m</h6>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-4">
-                    <div class="card">
-                        <i class="fas fa-comments fa-4x"></i>
-                        <h3>QA</h3>
-                        <h6>12:00 p.m - 12:30 p.m </h6>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-4">
-                <div class="col-md-4 mt-4">
-                    <div class="card">
-                        <i class="fas fa-tools fa-4x"></i>
-                        <h3>Workshop</h3>
-                        <h6>2:00 p.m - 4:00 p.m</h6>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-4">
-                    <div class="card">
-                        <i class="fas fa-fire fa-4x"></i>
-                        <h3>Team Exercise</h3>
-                        <h6>4:00 p.m - 6:00 p.m</h6>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-4">
-                <div class="col-md-12 text-center">
-                    <button id="showProgramButton" class="btn btn-primary">See the Whole Program</button>
-                </div>
-            </div>
-            <div id="programCards" class="row mt-4">
-                <div class="col-md-4 mt-4">
-                    <div class="program-card card">
-                        <i class="fas fa-chalkboard-teacher fa-4x"></i>
-                        <h3>Additional Lecture</h3>
-                        <h5>Announcement soon</h5>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-4">
-                    <div class="program-card card">
-                        <i class="fas fa-museum fa-4x"></i>
-                        <h3>Additional Exhibition</h3>
-                        <h6>Announcement soon</h6>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-4">
-                    <div class="program-card card">
-                        <i class="fas fa-comments fa-4x"></i>
-                        <h3>Additional Forum</h3>
-                        <h6>Announcement soon</h6>
-                    </div>
-                </div>
+                <p class="intro-text">At the API Festival, you'll have the chance to learn about the latest API trends, best practices, and
+                    cutting-edge technologies. Engage with industry experts, discover innovative use cases, and connect with
+                    like-minded individuals from around the globe.</p>
+                <h2>2023-12-20(WED) ~ 21(THU)</h2>
+                <span>@ University of Nairobi</span>
             </div>
         </div>
     </section>
-    <section id="speakers" class="about">
+    <section>
+        <div class="main-program">
+            <div>
+            <h2>Main Program</h2>
+            <hr>
+        </div>
+            <div class="program">
+                <section class="program-list">
+                    <article>
+                    <div class="card-display">
+                    <div class="program-image">
+                        <i class="fas fa-chalkboard-teacher fa-4x text-white"></i>
+                        <p class="program-name">Introduction</p>
+                        <p class="program-text">
+                            8:00 a.m - 10:00 a.m 
+                        </p> 
+                    </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="card-display">
+                    <div class="program-image">
+                        <i class="fas fa-museum fa-4x text-white"></i>
+                        <p class="program-name">Presentation</p>
+                        <p class="program-text">
+                            10:00 a.m - 12:00 p.m
+                        </p> </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="card-display">
+                        <div class="program-image">
+                            <i class="fas fa-tools fa-4x text-white"></i>
+                            <p class="program-name">Workshop</p>
+                            <p class="program-text">
+                                2:00 p.m - 4:00 p.m
+                            </p>
+                        </div> 
+                        </div>
+                    </article>
+                    <article>
+                    <div class="card-display">
+                    <div class="program-image">
+                        <i class="fas fa-fire fa-4x text-white"></i>
+                        <p class="program-name">Hackathon</p>
+                        <p class="program-text">
+                            4:00 p.m - 6:00 p.m
+                        </p>
+                    </div> 
+                    </div>
+                </article>
+                <article>
+                    <div class="card-display">
+                    <div class="program-image">
+                        <i class="fas fa-comments fa-4x text-white"></i>
+                        <p class="program-name">QA Session</p>
+                        <p class="program-text">
+                            6:00 p.m - 6:30 p.m
+                        </p>
+                    </div> 
+                    </div> 
+                </article> 
+                </section>
+                <button>Join Nairobi API Festival</button>
+            </div>
+            <a href="#">SEE THE WHOLE PROGRAM</a>
+        </div>
+    </section>
+
+    <!-- <section id="speakers" class="about">
         <h2>Featured Speakers</h2>
         <p>Our API Festival brings together some of the brightest minds in the industry. Learn from industry experts,
             thought leaders, and innovators who have pioneered the world of APIs.</p>
@@ -152,22 +172,32 @@
                 <button class="btn btn-primary" onclick="showHiddenSpeakers()">See More</button>
             </div>
         </div>
+    </section> -->
+    <section class="featured-guests" id="featured-guests">
+        <h2>Featured Speakers</h2>
+        <hr class="hr-line">
+        <div class="grid-cards"></div>
+        <div class="speaker-holder"></div>
     </section>
-    <section id="tickets" class="about">
-        <h2>Get Your Tickets</h2>
-        <p>Don't miss out on this incredible opportunity to immerse yourself in the world of APIs. Secure your tickets
-            today to guarantee your spot at the API Festival.</p>
-        <p>Early bird ticket sales will begin soon. Stay tuned for updates!</p>
-    </section>
-
-    <section id="partners" class="about">
-        <h2>Partners</h2>
-        <p>Here is a list of our wonderful partners who sponsored this event</p>
-        <div class="partners-container">
-            <img src="Images/6.png" alt="Company 1" class="partner-logo">
-            <img src="Images/7.png" alt="Company 2" class="partner-logo">
+    <section>
+        <div class="more-info">
+          More <i class="fa-sharp fa-solid fa-chevron-down"></i>
         </div>
-    </section>
+        <div class="less-info">
+          Less <i class="fa-sharp fa-solid fa-chevron-up"></i>
+        </div>
+      </section>
+    <section>
+        <div class="sponsors">
+          <p>Partner</p>
+          <hr>
+          <div class="spons">
+            <img src="./images/mozilla.PNG" alt="mozilla_logo">
+            <img src="./images/google.PNG" alt="google_logo">
+            <img src="./images/naver.PNG" alt="naver_logo">
+          </div>      
+        </div>
+      </section>
     <section>
         <footer>
             <p>&copy; 2023 API Festival. All rights reserved.</p>
